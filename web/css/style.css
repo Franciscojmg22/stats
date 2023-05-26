@@ -1,0 +1,49 @@
+body{
+  background-color: greenyellow;
+}
+
+.indTop{
+  height: 8vh;
+  width: 100%;
+  background-color: white;
+}
+
+.indBtn{
+  background-color: green;
+  color: white;
+}
+
+.indPanelReg{
+  height: 65vh;
+  width: 100%;
+  color: white;
+  background-color: rgb(32, 32, 32);
+}
+
+.indPanelReg1{
+  width: 40%;
+  color: white;
+  background-color: rgb(218, 28, 28);
+}
+
+.indPanelReg2{
+  width: 60%;
+  color: white;
+  background-color: rgb(15, 28, 146);
+}
+
+.indPanelInf{
+  min-height: 80vh;
+  width: 100%;
+  background-color: white;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}

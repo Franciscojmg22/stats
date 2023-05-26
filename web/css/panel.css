@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    height: 9vh;
+    background-color: rgb(23, 47, 28);
+}
+
+.headerStats {
+    height: 8vh;
+    background-color: white;
+    box-shadow: 0px 3px 10px rgba(100, 100, 100, 0.5);
+}
+
+.container {
+    height: 84vh;
+}
