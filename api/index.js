@@ -116,7 +116,8 @@ app.post('/login', async (req, res) => {
               const respuesta = {
                 error: '',
                 existe: 1,
-                id: results[0].aca_id
+                id: results[0].aca_id,
+                academia: results[0]. aca_nombre
               }
               const respuestaJSON = JSON.stringify(respuesta)
               res.send(respuestaJSON)
@@ -156,7 +157,39 @@ app.post('/login', async (req, res) => {
   }
 })
 
+app.post('/registroJugadores', async (req, res) => {
+  const nombre = req.body.nombre
+  const apellido = req.body.apellido
+  const fechaNacimiento = req.body.fechaNacimiento
+  const rama = req.body.rama
+  console.log(nombre, apellido, fechaNacimiento, rama)
 
+  try {
+    // revisa si existe ya registro
+    const sql = 'SELECT * FROM jugadores WHERE jug_nombre = ? AND jug_fec_nac = ?'
+    conexion.query(sql, [nombre, fechaNacimiento], (error, results, fills) => {
+      if (error) {
+        res.send(error)
+      } else {
+        if (results.length > 0) {
+          res.send('Registro existente')
+        } else {
+          // Comienza a insertar registro
+          const sql = 'INSERT INTO jugadores (jug_nombre, jug_apellido, jug_fec_nac, jug_rama) VALUES (?, ?, ?, ?)'
+          conexion.query(sql, [nombre, apellido, fechaNacimiento, rama], (error) => {
+            if (error) {
+              res.send('error al insertar datos')
+            } else {
+              res.send('Datos enviados correctamente')
+            }
+          })
+        }
+      }
+    })
+  } catch (error) {
+    res.send(error)
+  }
+})
 
 
 app.listen(3000, () => {

@@ -20,6 +20,7 @@ form.addEventListener('submit', e => {
             } else if (data.existe) {
                 console.log(data.id)
                 localStorage.setItem('id', data.id)
+                localStorage.setItem('academia', data.academia)
                 window.location.href = 'panel.html'
             } else {
                 console.log('no existe')

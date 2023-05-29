@@ -2,32 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/panel.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/panel.css">
 </head>
 
 <body>
-    <div class="header"></div>
-    <div class="headerStats"></div>
-    <div id="container" class="container"></div>
+  <div class="cabeceras">
+    <div class="header">
+      <span class="ico"></span>
+      <div id="academia" class="academia"> ACADEMIA PATITOS </div>
+    </div>
+    <div class="headerStats">
+      <button class="btnCategorias"> CATEGORIAS </button>
+      <button id="btnHome" class="btnStats">home</button>
+      <button id="btnEquipos" class="btnStats">Equipos</button>
+      <button id="btnTorneos" class="btnStats">Torneos</button>
+      <button id="btnJugadores" class="btnStats">Jugadores</button>
+    </div>
+  </div>
+    
+
+  <div id="container" class="container"></div>
 </body>
 
 </html>
 
 <script>
-    window.addEventListener('DOMContentLoaded', function () {
-        var contenedor = document.getElementById('container')
-        var xhr = new XMLHttpRequest()
-        xhr.open('GET', './components/stats.html', true)
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                contenedor.innerHTML = xhr.responseText
-            }
-        }
-        xhr.send()
-    });
+  const contenedor = document.getElementById('container')
+  const btnHome = document.getElementById('btnHome')
+  const btnEquipos = document.getElementById('btnEquipos')
+  const btnTorneos = document.getElementById('btnTorneos')
+  const btnJugadores = document.getElementById('btnJugadores')
+  const academia = document.getElementById('academia')
 
+  window.addEventListener('DOMContentLoaded', function () {
+    academia.textContent = localStorage.getItem('academia')
+    const url = './components/jugadores.html'
+    cargaPanel(url)
+    console.log('hola yoas')
+  })
+
+  btnHome.addEventListener('click', () => {
+    const url = './components/home.html'
+    cargaPanel(url)
+  })
+
+  btnEquipos.addEventListener('click', () => {
+    const url = './components/equipos.html'
+    cargaPanel(url)
+  })
+
+  btnTorneos.addEventListener('click', () => {
+    const url = './components/torneos.html'
+    cargaPanel(url)
+  })
+
+  btnJugadores.addEventListener('click', () => {
+    const url = './components/jugadores.html'
+    cargaPanel(url)
+  })
+
+  const cargaPanel = (url) => {
+    var xhr = new XMLHttpRequest()
+    xhr.open('GET', url, true)
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        contenedor.innerHTML = xhr.responseText
+      }
+    }
+    xhr.send()
+  }
 </script>

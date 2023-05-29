@@ -1,19 +1,76 @@
 body {
     margin: 0px;
     padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+
 }
+
+h1{
+  font-family: 'Jost';
+  font-size: x-large;
+}
+
 
 .header {
     height: 9vh;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
     background-color: rgb(23, 47, 28);
+}
+
+.ico {
+  margin-inline-start: 15px;
+  display: inline-block;
+  height: 7vh;
+  width: 7vh;
+  background-image: url('../partials/ico.png');
+  background-size: cover;
+}
+
+.academia{
+  font-size: larger;
+  font-weight: 600;
+  color: white;
+  margin-inline-start: 5px;
 }
 
 .headerStats {
     height: 8vh;
+    min-width: 100vw;
     background-color: white;
     box-shadow: 0px 3px 10px rgba(100, 100, 100, 0.5);
 }
 
 .container {
-    height: 84vh;
+    height: 83vh;
+    width: 100%;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
 }
+
+.btnStats{
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    color: rgb(103, 110, 101);
+}
+
+.btnStats:focus, .btnStats:hover{
+    border-bottom: 3px solid rgb(23, 47, 28);
+}
+
+.btnCategorias{
+  height: 100%;
+  background-color: transparent;
+  margin-inline: 10px;
+  border: 0px;
+  color: rgb(103, 110, 101);
+  font-size: large;
+  font-weight: 600;
+}
+
+

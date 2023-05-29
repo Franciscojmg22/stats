@@ -1,0 +1,112 @@
+body {
+    background-image: url('../partials/fondo.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 70%;
+    width: 24%;
+    padding-bottom: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.divLogo {
+   height: 25%;
+}
+
+
+.divFormulario{
+    height: 55%;
+}
+
+.divFin{
+    height: 20%;
+}
+
+form{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="email"], input[type="password"], input[type="text"]{
+    width: 12rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(18px);
+    padding-block: 4px;
+    padding-inline: 5px;
+    margin-bottom: 4vh;
+
+    border: 0px;
+    color: black;
+    border-bottom: 2px solid rgb(0, 65, 11);
+
+}
+
+input:focus{
+    outline: none;
+    width: 13rem;
+    transform: translate(-3px, -3px);
+    margin-inline: 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder{
+    color: black;
+}
+
+input[type="submit"]{
+    width: 10rem;
+    margin-block: 14px;
+    border-radius: 2vw;
+    padding-inline: 10px;
+    padding-block: 8px;
+    background-color: rgb(255, 79, 15);
+    border: 0px;
+    box-shadow: 1px 2px 5px rgba(88, 88, 88, 0.5);
+
+    font-family: 'Jost' sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: aqua;
+}
+
+.logo{
+    height: 100%;
+    width: auto;
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+form p{
+    font-family: 'Jost' sans-serif;
+    font-size: medium;
+    font-weight: 300;
+    margin: 2px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+  }
+  

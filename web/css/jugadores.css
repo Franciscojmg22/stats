@@ -1,0 +1,84 @@
+
+/*----------LISTA DE JUGADORES----------*/
+
+.cabecera{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hJugadores{
+    flex: 70%; 
+    margin: 0px;
+    padding-inline-start: 15px;
+
+}
+
+#hLabel{
+    flex: 15%;
+    margin: 0px;
+
+}
+
+#hCategoria{
+    flex: 15%;
+    margin: 0px;
+
+}
+
+.apartados{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.apartados label:not(#labNombre, #acciones){
+    flex: 9%;
+    text-align: center;
+    margin: 0px;
+   
+}
+
+.apartados label[id="labNombre"]{
+    flex: 28%;
+    margin: 0px;
+    margin-inline-start: 15px;
+}
+
+.apartados label[id="acciones"]{
+    flex: 14%;
+    text-align: center;
+    margin: 0px;
+}
+
+/*---TEMPLATE---TEMPLATE---TEMPLATE---TEMPLATE---*/
+.registros{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.registros label:not(#labNombre, #acciones){
+    flex: 9%;
+    text-align: center;
+    margin: 0px;
+   
+}
+
+.registros label[id="labNombre"]{
+    flex: 28%;
+    margin: 0px;
+    margin-inline-start: 15px;
+}
+
+.registros label[id="acciones"]{
+    flex: 14%;
+    text-align: center;
+    margin: 0px;
+}

@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <div class="indTop">
-            <button id="btnLogin" 
-                    class="indBtn">
-                    Login 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <span class="ico"></span>
+        <div class="titulo"> STATS </div>
+    </div>
+    <div class="headerDos">
+        <div class="login">
+            <button id="btnLogin" class="btnLogin">
+                Login
             </button>
         </div>
-        <div class="indPanelReg row">
-            <div class="indPanelReg1 col">
-                <h1>Crea tu cuenta</h1>
-                <p>Registrate y manten control de tu equipo</p>
-                <button id="btnRegistro" 
-                        class="indBtn">
-                        Registrate 
+    </div>
+    <div class="panel row">
+        <div class="col panelRegistro">
+            <div class="regInfo">
+                <h1 style="margin-top: 0px; margin-bottom: 25px;">Crea tu cuenta</h1>
+                <p>Registrate de manera sencilla con tu correo y toma el control de las estadisticas</p>
+                <button id="btnRegistro" class="btnregistro">
+                    Registrate
                 </button>
+            </div>  
+        </div>
+        <div class="panelDisplay">
+            <div class="slider">
+                <ul>
+                    <li><img src="./partials/carrete/ima1.jpg" alt=""></li>
+                    <li><img src="./partials/carrete/ima2.jpg" alt=""></li>
+                    <li><img src="./partials/carrete/ima3.jpg" alt=""></li>
+
+                </ul>
             </div>
         </div>
-        <div class="indPanelInf"></div>
-    </body>
-    <script src="./script/index.js"></script>
+    </div>
+    <div class="panelInfo">
+        <div class="infoTitulo"> ¿Que beneficios ofrecemos?</div>
+        <div class="infoContenedor">
+            <div id="contenedor" class="contenedor"></div>
+        </div>
+
+    </div>
+</body>
+
+<template id="tarjetas">
+    <div class="template col">
+        <img id="ico" src="..." class="icono"></img>
+        <div id="info" class="informacion"> adiooooos </div>
+    </div>
+
+</template>
+
+<script src="./script/index.js"></script>
+
 </html>
