@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/panel.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/display.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="bodyPanel">
+  <div class="headerContainer">
+    <iframe src="../components/header.html" frameborder="0"></iframe>
+  </div>
+
+  <div id="container" class="container">
+    <div class="divDisplay">
+      <div class="card">
+        <div class="cabeceraDisplay">
+          <h1 for="" id="cabEquipo">Equipo</h1>
+          <label for="" id="cabTorneo">Torneo: </label>
+          <label for="" id="Torneo" style="margin-inline-start: 6px">---- </label>
+          <label for="" id="vs" style="margin-inline-start: 12px">vs ------</label>
+        </div>
+        <hr style="width: 94%;">
+        <div class="apartados labelBold">
+          <label id="Nombre" for="">Nombre</label>
+          <label for="">Tir</label>
+          <label for="">Tri</label>
+          <label for="">Asi</label>
+          <label for="">Tap</label>
+          <label for="">Reb</label>
+          <label for="">Rob</label>
+          <label for="">Per</label>
+          <label for="">min</label>
+        </div>
+        <div id="contenedorDatos" class="contenedorDatos">
+
+        </div>
+      </div>
+    </div>
+    <div class="divActions">
+      <div class="card" id="cardAcciones">
+        <h1>filtro</h1>
+        <p style="margin-inline: 10%;">filtre solo por torneo para ver todos estaditicas totales del torneo, o torneo y
+          partido para estadisticas de cada partido</p>
+        <div class="center column">
+
+          <form action="">
+            <label for="">torneo</label>
+            <select id="secTorneo">
+              <option value="" disabled selected style="color: gray; font-weight: 200;">Torneo</option>
+            </select>
+            <label for="">equipo</label>
+            <select id="secEquipo">
+              <option value="" disabled selected style="color: gray; font-weight: 200;">Equipo</option>
+            </select>
+            <label for="">partido</label>
+            <select id="secPartido">
+              <option value="" disabled selected parId="*" style="color: gray; font-weight: 200;">Partido</option>
+            </select>
+            <button id="btn" type="button">Aplicar</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <dialog id="dialogRespuesta">
+    <div id="dialogRespuesta" class="dialogRespuesta">
+      <h1 id="mensajeDialog"></h1>
+    </div>
+    
+  </dialog>
+</body>
+
+
+<template id="cardDatos">
+  <div class="apartados">
+    <label id="Nombre" for="">Nombre</label>
+    <label id="regTir" class="" for="">Tir</label>
+    <label id="regTri">Asi</label>
+    <label id="regAsi">Asi</label>
+    <label id="regTap">Tap</label>
+    <label id="regReb">Reb</label>
+    <label id="regRob">Reb</label>
+    <label id="regPer">Per</label>
+    <label id="regMin">min</label>
+  </div>
+
+</template>
+
+<script src="../pages-script/home.js"></script>
+
+</html>

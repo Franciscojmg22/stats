@@ -1,0 +1,210 @@
+
+/*----------LISTA DE JUGADORES----------*/
+
+.cabeceraDisplay{
+    width: 95%;
+    height: 14%;
+    padding-inline: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabeceraDisplay h1{
+    flex: 30%; 
+    margin: 0px;
+    padding-inline-start: 15px;
+    font-size: 2rem;
+}
+
+.cabeceraDisplay input{
+    width: 18%;
+    margin-inline-end: 17px;
+    margin-inline-start: 6px;
+    border: 0px;
+    border-bottom: 1px solid gray;
+    font-size: large;
+}
+
+.cabeceraDisplay input:focus{
+    outline: none;
+    width: 18%;
+    margin-inline-end: 17px;
+    margin-inline-start: 6px;
+    border: 0px;
+    border-bottom: 2px solid gray;
+    border-style: groove;
+    background-color: rgb(245, 245, 245);
+    font-size: large;
+}
+
+hr{
+    width: 94%;
+}
+
+.cabeceraDisplay label{
+    font-size: x-large;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.cabeceraDisplay button{
+    background-color: rgb(255, 137, 26);
+    border: 0px;
+    border-radius: 5px;
+    padding-inline: 5px;
+    padding-block: 4px;
+    color: white;
+}
+
+.apartados label{
+    flex: 9%;
+    text-align: center;
+    margin: 0px;
+    font-size: large;
+}
+
+.labelBold label {
+    font-weight: bolder;
+}
+
+.label{
+    flex: 9%;
+    text-align: center;
+    margin: 0px;
+}
+
+.apartados{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.apartados label[id="Nombre"]{
+    flex: 23%;
+    margin: 0px;
+    margin-inline-start: 15px;
+    text-align: left;
+}
+
+.apartados label[id="Acciones"]{
+    flex: 14%;
+    text-align: center;
+    margin: 0px;
+}
+
+.apartados .nombre{
+    flex: 20%;
+    text-align: left;
+}
+
+/*---TEMPLATE---TEMPLATE---TEMPLATE---TEMPLATE---*/
+
+.contenedorDatos{
+    width: 100%;
+    min-height: 76%;
+}
+
+.registros{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.registros label:not(#labNombre, #acciones){
+    flex: 9%;
+    text-align: center;
+    margin: 0px;
+   
+}
+
+.registros label[id="labNombre"]{
+    flex: 28%;
+    margin: 0px;
+    margin-inline-start: 15px;
+}
+
+.registros label[id="acciones"]{
+    flex: 14%;
+    text-align: center;
+    margin: 0px;
+}
+
+.fondo {
+    background-color: rgba(255, 198, 66, 0.5);
+}
+
+.btnAcciones {
+    margin-inline: 6px;
+    height: 27px;
+    width: 27px;
+    border: 0px;
+    padding: 0px;
+    border-radius: 5px;
+
+}
+
+.color-rojo {
+    background-color: red;
+}
+
+.color-verde {
+    background-color: green;
+}
+
+.btnAcciones i {
+    font-size: 15px;
+    padding: 6px;
+    color: white;
+}
+
+.dialogDelete {
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    min-width: 20vw;
+    padding-inline: 15px;
+}
+
+.dialogContenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+
+}
+
+.dialogContenido p {
+    font-size: larger !important;
+}
+
+.dialogBotones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    height: 40px;
+    padding-block: 8px;
+}
+
+.dialogBotones button {
+    border: 0px;
+    border-radius: 8px;
+    padding-inline: 10px;
+    padding-block: 5px;
+    color: white;
+    margin-inline-start: 20px;
+    font-size: large;
+}
+
+.formularioUpdate{
+    width: 30vw;
+    height: 65vh;
+}

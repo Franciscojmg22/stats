@@ -110,3 +110,12 @@ form p{
     flex-direction: row;
   }
   
+  .exito{
+    background-color: rgb(161, 255, 197);
+    color: green;
+  }
+  
+  .error{
+    background-color: rgb(255, 237, 176);
+    color: red;
+  }

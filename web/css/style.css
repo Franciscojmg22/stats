@@ -52,6 +52,8 @@ h1{
 
 .btnLogin {
   float: right;
+  border: 0px;
+  font-size: large;
   background-color: rgb(226, 62, 2);
   color: white;
   border-radius: 20px;

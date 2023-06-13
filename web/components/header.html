@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+
+<body class="bodyHeader">
+<header>
+    <div class="header">
+        <span class="ico"></span>
+        <div id="academia" class="academia"> ACADEMIA PATITOS </div>
+        <div class="divBtn">
+            <button id="btnLogout"> LogOut</button>
+        </div>
+    </div>
+    <div class="headerStats">
+        <button class="btnCategorias"> CATEGORIAS </button>
+        <button id="btnHome" class="btnStats">home</button>
+        <button id="btnEquipos" class="btnStats">Equipos</button>
+        <button id="btnTorneos" class="btnStats">Torneos</button>
+        <button id="btnJugadores" class="btnStats">Jugadores</button>
+        <button id="btnPartidos" class="btnStats">Partidos</button>
+    </div>
+</header>
+    
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<script>
+    const btnHome = document.getElementById('btnHome')
+    const btnEquipos = document.getElementById('btnEquipos')
+    const btnTorneos = document.getElementById('btnTorneos')
+    const btnJugadores = document.getElementById('btnJugadores')
+    const btnPartidos = document.getElementById('btnPartidos')
+    const academia = document.getElementById('academia')
+    const btnLogout = document.getElementById('btnLogout')
+
+    //academia.textContent = localStorage.getItem('academia')
+    window.addEventListener('DOMContentLoaded', function () {
+    academia.textContent = localStorage.getItem('academia')
+  })
+
+    btnHome.addEventListener('click', () => {
+        window.parent.location.href = '../pages/home.html'
+    })
+
+    btnEquipos.addEventListener('click', () => {
+        window.parent.location.href = '../pages/equipos.html'
+    })
+
+    btnTorneos.addEventListener('click', () => {
+        window.parent.location.href = '../pages/torneos.html'
+    })
+
+    btnJugadores.addEventListener('click', () => {
+        window.parent.location.href = '../pages/jugadores.html'
+    })
+
+    btnPartidos.addEventListener('click', () => {
+        window.parent.location.href = '../pages/partidos.html'
+    })
+
+    btnLogout.addEventListener('click', e => {
+        e.preventDefault()
+        localStorage.clear()
+        window.parent.location.href = '../index.html'
+    })
+
+</script>

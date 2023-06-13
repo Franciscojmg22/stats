@@ -1,0 +1,93 @@
+.bodyHeader{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+  font-family: 'Jost';
+  font-size: x-large;
+}
+
+
+.header {
+    min-height: 58px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(23, 47, 28);
+}
+
+.headerStats {
+    min-height: 53px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(100, 100, 100, 0.5);
+}
+
+.ico {
+  margin-inline-start: 15px;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url('../partials/ico.png');
+  background-size: cover;
+}
+
+.academia{
+  height: 53px;
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  font-weight: 600;
+  color: white;
+  margin-inline-start: 5px;
+}
+
+.divBtn{
+  height: 53px;
+  flex: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: x-large;
+  font-weight: 600;
+  color: white;
+  margin-inline-end: 15px;
+}
+
+#btnLogout{
+  width: 85px;
+  height: 45px;
+  border: 0;
+  border-radius: 12px;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(255, 166, 0);
+}
+
+.btnStats{
+    height: 53px;
+    background-color: transparent;
+    border: 0px;
+    color: rgb(103, 110, 101);
+    font-size: medium;
+}
+
+.btnStats:focus, .btnStats:hover{
+    border-bottom: 3px solid rgb(23, 47, 28);
+}
+
+.btnCategorias{
+  height: 53px;
+  background-color: transparent;
+  margin-inline: 10px;
+  border: 0px;
+  color: rgb(103, 110, 101);
+  font-size: x-large;
+  font-weight: 600;
+}
+
+

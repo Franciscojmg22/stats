@@ -1,76 +1,193 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
-    width: 100vw;
-    min-width: 100vw;
-
-}
-
-h1{
+*{
+  margin: 0px;
+  padding: 0px;
   font-family: 'Jost';
-  font-size: x-large;
 }
 
-
-.header {
-    height: 9vh;
-    max-width: 100vw;
-    display: flex;
-    align-items: center;
-    background-color: rgb(23, 47, 28);
+.row{
+  display: flex;
+  flex-direction: row;
 }
 
-.ico {
-  margin-inline-start: 15px;
-  display: inline-block;
-  height: 7vh;
-  width: 7vh;
-  background-image: url('../partials/ico.png');
-  background-size: cover;
+.column{
+  display: flex;
+  flex-direction: column;
 }
 
-.academia{
-  font-size: larger;
-  font-weight: 600;
-  color: white;
-  margin-inline-start: 5px;
+.bodyPanel{
+  padding: 0%;
+  margin: 0%;
+  height: 100vh;
+  width: 100vw;
 }
 
-.headerStats {
-    height: 8vh;
-    min-width: 100vw;
-    background-color: white;
-    box-shadow: 0px 3px 10px rgba(100, 100, 100, 0.5);
+header{
+  height: 115px;
+  width: 100%;
+}
+
+.headerContainer{
+  height: 115px; 
+  width: 100%;
 }
 
 .container {
-    height: 83vh;
-    width: 100%;
-    min-width: 100vw;
-    display: flex;
-    flex-direction: row;
+  background-color: whitesmoke;
+  height: calc(100vh - 115px);
+  width: 100%;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: row;
 }
 
-.btnStats{
-    height: 100%;
-    background-color: transparent;
-    border: 0px;
-    color: rgb(103, 110, 101);
+iframe{
+  width: 100%;
+  min-height: 100%;
 }
 
-.btnStats:focus, .btnStats:hover{
-    border-bottom: 3px solid rgb(23, 47, 28);
-}
-
-.btnCategorias{
+.center{
+  width: 100%;
   height: 100%;
-  background-color: transparent;
-  margin-inline: 10px;
-  border: 0px;
-  color: rgb(103, 110, 101);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.divDisplay{
+  height: 100%;
+  width: 72%;
+  min-width: 72vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+
+  padding-inline-start: 30px;
+  padding-inline-end: 15px;
+}
+
+.divActions{
+  height: 100%;
+  min-height: 100%;
+  width: 28%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-inline-start: 15px;
+  padding-inline-end: 30px;;
+}
+
+.card{
+
+  height: 90%;
+  max-height: 90%;
+  width: 100%;
+  padding-inline: 10px;
+  padding-block-end: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(179, 179, 179);
+  border: 1px solid rgb(240, 240, 240) ;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: auto;
+}
+
+.divActions p{
+  margin-block: 20px;
+}
+
+.divActions form {
+  margin-inline: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+}
+
+.divActions form label {
+  min-width: 100%;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
   font-size: large;
-  font-weight: 600;
+  margin: 3px;
+  width: 100%;
+}
+
+.divActions input[type="text"], [type="date"], select {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 0px;
+  border-bottom: 1px solid gray;
+  padding-inline-end: 0px;
+  font-size: 19px;
 }
 
 
+.divActions input:focus[type="text"], :focus[type="date"]{
+  outline: none;
+  width: 100%;
+  border: 0px;
+  padding-inline-end: 7px;
+  border-bottom: 2px solid gray;
+  color: black
+}
+
+.divActions input::placeholder[type="text"], [type="date"] {
+  color: black;
+}
+
+
+.divActions form button{
+  width: 15rem;
+  margin-block: 10px;
+  border-radius: 2vw;
+  padding-inline: 10px;
+  padding-block: 8px;
+  background-color: rgb(255, 79, 15);
+  border: 0px;
+  box-shadow: 1px 2px 5px rgba(88, 88, 88, 0.5);
+
+  font-family: 'Jost' sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: aqua;
+}
+
+.cardDatos{
+  width: 100%;
+}
+
+
+.exito{
+  background-color: rgb(161, 255, 197);
+  color: green;
+}
+
+.error{
+  background-color: rgb(255, 237, 176);
+  color: red;
+}
+
+.dialogRespuesta{
+  height: 20vh;
+  width: 21rem;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+dialog:modal{
+  top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+}
